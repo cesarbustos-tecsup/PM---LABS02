@@ -40,7 +40,20 @@ fun construirAcuario() {
     miTorre.imprimirTamano()
 }
 
+// 6.1. Implementación de clases abstractas
+fun crearPeces() {
+    val tiburon = Tiburon()
+    val pezPayaso = PezPayaso()
+
+    println("El tiburón es de color ${tiburon.color}.")
+    tiburon.comer()
+
+    println("El pez payaso es de color ${pezPayaso.color}.")
+    pezPayaso.comer()
+}
+
 // 3.3. Crear una función main()
 fun main() {
-construirAcuario()
+    //construirAcuario()
+    //crearPeces()
 }
